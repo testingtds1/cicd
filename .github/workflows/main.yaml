@@ -41,7 +41,7 @@ jobs:
   # ======================================================
   deploy-container:
     needs: build-and-push  # This ensures Job 2 only starts if Job 1 succeeds
-    runs-on: ubuntu-latest
+    runs-on: label1
 
     steps:
       # Log in again (because this is a new runner)
